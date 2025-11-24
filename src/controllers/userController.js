@@ -21,7 +21,7 @@ export const registerUser = async (req, reply) => {
 
     reply.status(201).send({ message: "User registered successfully", user: { id: newUser.id, email: newUser.email } });
   } catch (error) {
-    console.error(error);
+    console.error('console error : ', error);
     reply.status(500).send({ message: "Server error" });
   }
 };

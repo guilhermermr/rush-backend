@@ -14,7 +14,7 @@ await fastify.register(fastifyCors, {
 });
 
 // Rotas
-fastify.register(userRoutes, { prefix: "/api/" });
+fastify.register(userRoutes, { prefix: "/api/user" });
 
 const start = async () => {
   try {
